@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Filter(props) {
-  const { title, rate, onTitleChange, onRateChange } = props;
+function Filter({title, rate, onTitleChange, onRateChange}) {
+  
 
   return (
     <div className="flex justify-between w-1/2 mx-auto my-4">
