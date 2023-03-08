@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import EffectHook from './Components/effectHook';
 import MovieList from './Components/MovieList';
 import Filter from './Components/Filter';
+import { Link } from 'react-router-dom'
+
 
 function App() {
     const [movies, setMovies] = useState([
@@ -70,6 +72,7 @@ function App() {
     
       return (
         <div>
+          <Link to='/'>Home</Link>
           <form onSubmit={handleAddMovie}>
             <input className ='bg-red-200' type="text" placeholder="Title" name="title" value={newMovie.title} onChange={handleInputChange} />
             <input type="text" placeholder="Description" name="description" value={newMovie.description} onChange={handleInputChange} />
